@@ -50,6 +50,12 @@ App.submitPost = function(event){
 
 $(document).ready(function(){
   App.getPosts();
+
+  $('nav.navbar').on('click','a#toggle',function(e){
+    $('nav.dropdown-menu').toggleClass('active');
+    $('section.main-content').toggleClass('menu-open');
+  });
+
   $('form.new-post-form').on('submit',function(event){
     App.submitPost(event);
   });
