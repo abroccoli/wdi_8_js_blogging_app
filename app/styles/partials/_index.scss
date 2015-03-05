@@ -1,0 +1,9 @@
+section.main-content {
+  @extend .container;
+  padding-top: 100px;
+  div.row {
+    @extend .clearfix;
+    article.post {
+    }
+  }
+}
